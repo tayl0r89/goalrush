@@ -3,3 +3,8 @@ export interface Fixture {
     awayTeam: string,
     gameNumber: number
 }
+
+export interface FixtureChoice {
+    username: string,
+    fixture: Fixture
+}
