@@ -31,7 +31,7 @@ export const WeeksGames: React.FC<WeeksGamesProps> = ({choices}) => {
                         <CardContent>
                             {choices.filter(c => c.username === user)
                                 .map(c => (
-                                    <Box key={c.fixture.gameNumber} m={1}>
+                                    <Box key={c.fixture.number} m={1}>
                                         <FixtureLine fixture={c.fixture}/>
                                     </Box>)
                                 )}

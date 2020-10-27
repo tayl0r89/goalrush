@@ -10,12 +10,14 @@ export interface FixtureListProps {
 export const FixtureList: React.FC<FixtureListProps> = ({fixtures}) => {
     return (
         <Column>
-            {fixtures.map(f => {
-                return (
-                    <Box key={f.gameNumber} p={1}>
-                        <FixtureLine fixture={f}/>
-                    </Box>
-                )
+            {fixtures
+                .sort((a,b) => a.number > b.number ? 1 : -1)
+                .map(f => {
+                    return (
+                        <Box key={f.number} p={1}>
+                            <FixtureLine fixture={f}/>
+                        </Box>
+                    )
             })}
         </Column>
     )

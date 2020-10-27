@@ -23,6 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "firebase deploy --only hosting",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -52,5 +53,6 @@
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
-  }
+  },
+  "proxy":"http://localhost:8080"
 }

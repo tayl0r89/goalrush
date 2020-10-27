@@ -12,8 +12,8 @@ const Template: Story<FixtureProps> = (args) => <FixtureLine {...args} />;
 export const DefaultFixture = Template.bind({});
 DefaultFixture.args = {
   fixture:{
-    homeTeam: "Bolton",
-    awayTeam: "Newport",
-    gameNumber: 1
+    home: "Bolton",
+    away: "Newport",
+    number: 1
   }
 }

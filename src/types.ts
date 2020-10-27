@@ -1,7 +1,7 @@
 export interface Fixture {
-    homeTeam: string,
-    awayTeam: string,
-    gameNumber: number
+    home: string,
+    away: string,
+    number: number
 }
 
 export interface FixtureChoice {

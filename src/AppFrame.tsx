@@ -8,7 +8,8 @@ import {
   LayoutConfig,
 } from '@committed/layout'
 import { Typography, List } from '@committed/components'
-import { TableChart, SportsSoccer } from '@material-ui/icons'
+import { SportsSoccer } from '@material-ui/icons'
+import { FixtureListContainer } from './containers/FixtureListContainer'
 
 const config: Partial<LayoutConfig> = {
   // Only permanently show nav drawer at higher resolutions
@@ -27,11 +28,10 @@ export const AppFrame: React.FC<{}> = ({children}) => {
       <Nav>
         <List>
           <NavListItem text="Gameweek" icon={<SportsSoccer />} />
-          <NavListItem text="League Table" icon={<TableChart />} />
         </List>
       </Nav>
       <Content>
-        {children}
+        <FixtureListContainer/>
       </Content>
     </Root>
   )
