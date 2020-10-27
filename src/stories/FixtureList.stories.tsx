@@ -12,8 +12,8 @@ const Template: Story<FixtureListProps> = (args) => <FixtureList {...args} />;
 export const DefaultFixture = Template.bind({});
 DefaultFixture.args = {
   fixtures:[
-    {homeTeam: "Bolton", awayTeam: "Newport", gameNumber: 1},
-    {homeTeam: "Northampton", awayTeam: "Hull", gameNumber: 2},
-    {homeTeam: "Milwall", awayTeam: "Gillingham", gameNumber: 3}
+    {home: "Bolton", away: "Newport", number: 1},
+    {home: "Northampton", away: "Hull", number: 2},
+    {home: "Milwall", away: "Gillingham", number: 3}
   ]
 }

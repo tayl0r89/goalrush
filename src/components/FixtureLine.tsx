@@ -11,19 +11,19 @@ export const FixtureLine: React.FC<FixtureProps> = ({fixture}) => {
     <Box border={1} borderRadius={16} borderColor="rgba(0, 0, 0, 0.12)">
       <Row>
         <Box p={3} width={0.1}>
-          <Typography>{fixture.gameNumber}</Typography>
+          <Typography>{fixture.number}</Typography>
         </Box>
         <Divider orientation="vertical"/>
         <Box width={0.9}>
           <Row justifyContent="center">
             <Box p={3} width={0.45}>
-              <Typography align="right">{fixture.homeTeam}</Typography>
+              <Typography align="right">{fixture.home}</Typography>
             </Box>
             <Box paddingTop={3} paddingBottom={3} width={0.1}>
               <Typography align="center">vs</Typography>
             </Box>
             <Box p={3} width={0.45}>
-              <Typography align="left">{fixture.awayTeam}</Typography>
+              <Typography align="left">{fixture.away}</Typography>
             </Box>
           </Row>
         </Box>

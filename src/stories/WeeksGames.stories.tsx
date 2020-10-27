@@ -11,9 +11,9 @@ export default {
 const createChoice = (user: string): FixtureChoice => ({
     username: user,
     fixture:{
-        homeTeam: "Bolton",
-        awayTeam: "Newport",
-        gameNumber: 1
+        home: "Bolton",
+        away: "Newport",
+        number: 1
     }
 })
 
