@@ -12,6 +12,10 @@
         "function": "fixtures"
       },
       {
+        "source": "api/fixturesummaries",
+        "function": "fixturesummary"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

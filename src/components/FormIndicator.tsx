@@ -12,7 +12,7 @@ const FormAvatar: React.FC<{good: boolean}> = ({good}) => {
 export const FormIndicator: React.FC<FormIndicatorProps> = ({form}) => {
     return (
         <Row justifyContent="center">
-            {form.map((v, i) => <FormAvatar good={v} key={i}/>)}
+            {form?.map((v, i) => <FormAvatar good={v} key={i}/>)}
         </Row>
     )
 }
